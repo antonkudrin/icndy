@@ -1,0 +1,352 @@
+body{font-size: 100%;}
+@media (max-width:1300px) {
+  body{font-size: 80%;}  
+}
+@media (max-width:1000px) {
+  body{font-size: 60%;}  
+}
+@media (max-width:770px) {
+  body{font-size: 40%}  
+}
+.row>*{outline: 0px solid red;}
+.img-1{margin-bottom: 2px;}
+.wrapper{max-width: 2500px;margin: 0 auto;}
+header{
+position: fixed;
+z-index: 1;
+} 
+a.navbar-brand {
+font-size: 2.5em;
+float: left;
+padding: 2% 1%;
+line-height: 20px;
+text-decoration: none;
+color: #7D7D7B;
+font-weight: 700;
+background-color: #FFFFFF;
+letter-spacing: 7px;
+font-family: arial;
+}
+nav.main-navigation {
+position: relative;
+padding: 2%;
+}
+@media (max-width: 870px) {
+ nav.main-navigation ul.nav-list {
+    display: none;
+ }
+}
+nav.main-navigation ul.nav-list {
+margin: 0;
+padding: 0;
+list-style: none;
+position: relative;
+text-align: right;
+}
+
+.nav-list li.nav-list-item {
+display: inline-block;
+line-height: 40px;
+margin-left: 30px;
+margin-top: 15px;
+}
+
+a.nav-link {
+text-decoration: none;
+font-size: 1em;
+font-family: verdana;
+font-weight: 500;
+cursor: pointer;
+position: relative;
+color: #FFFFFF;
+letter-spacing: 4px;
+}
+
+.nav-list-item a:hover{
+color:#F74544;
+}
+
+.nav-list-item a:after {
+display: block;
+position: absolute;
+left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+width: 0;/*задаём длинну линии до наведения курсора*/
+height: 1px; /*задаём ширину линии*/
+background-color: #F94546; /*задаём цвет линии*/
+content: "";
+transition: width 0.4s ease-out; /*задаём время анимации*/
+}
+
+.nav-list-item a:hover:after,
+.nav-list-item a:focus:after {
+width: 95%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+@keyframes FadeIn {
+    0% {
+    opacity: 0;
+    -webkit-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+    }
+
+    100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    pointer-events: auto;
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+
+.nav-list li {
+animation: FadeIn 1s cubic-bezier(0.65, 0.05, 0.36, 1);
+animation-fill-mode: both;
+}
+
+.nav-list li:nth-child(1) {
+animation-delay: .3s;
+}
+
+.nav-list li:nth-child(2) {
+animation-delay: .6s;
+}
+
+.nav-list li:nth-child(3) {
+animation-delay: .9s;
+}
+
+.nav-list li:nth-child(4) {
+animation-delay: 1.2s;
+}
+
+.nav-list li:nth-child(5) {
+animation-delay: 1.5s;
+}
+
+/* Animation */
+
+@keyframes fadeInUp {
+from {
+transform: translate3d(0, 40px, 0)
+}
+
+to {
+transform: translate3d(0, 0, 0);
+opacity: 1
+}
+}
+
+@-webkit-keyframes fadeInUp {
+from {
+transform: translate3d(0, 40px, 0)
+}
+
+to {
+transform: translate3d(0, 0, 0);
+opacity: 1
+}
+}
+
+.animated {
+animation-duration: 1s;
+animation-fill-mode: both;
+-webkit-animation-duration: 1s;
+-webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+opacity: 0
+}
+
+.fadeInUp {
+opacity: 0;
+animation-name: fadeInUp;
+-webkit-animation-name: fadeInUp;
+}
+.content-1{padding:5%;}
+.card{border:0px;}
+img.brand-1{width: 25%;}
+img.brand-2{width: 22%;}
+img.brand-3{width: 39%;}
+img.brand-4{width: 76.5%;}
+img.brand-5{width: 30.6%;}
+img.brand-6{width: 50.8%;}
+.card-1{
+position: absolute;
+top: 40%;
+}
+
+.card-1 p{
+	font-size: 3em ;
+	letter-spacing: 0.3em;
+	font-family: arial;
+}
+
+.card-1 h4{
+	font: 2em bold;
+	color:#F94546;
+	letter-spacing: 0.3em;
+	font-family: arial; 
+}
+
+@media (max-width: 400px) {
+   .card-2{
+padding: 0 0 0 1em;
+} 
+}
+.card-2{
+position: absolute;
+top: 50%;
+}
+
+.card-2 p{
+	font-size:3.3em;
+	letter-spacing: 0.3em;
+	font-family: arial;
+}
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    .card img.img-2{
+    padding-top:0;    
+    margin-top:0.5rem;
+    }
+}
+@-moz-document url-prefix() {
+    .card img.img-2{
+    padding-top:1rem;    
+    margin-top:1rem;
+    }
+}
+
+
+
+.card-3{
+	position: absolute;
+	top: 20%;
+}
+
+.card-3 p{
+	font-size: 1.8em ;
+	letter-spacing: 0.3em;
+	font-family: arial;
+}
+
+.card-4{
+	position: absolute;
+	top: 45%;
+}
+
+.card-4 p{
+	font-size:2.2em;
+	letter-spacing:0.3em;
+	font-family: arial;
+}
+
+
+
+.card-5{
+	position: absolute;
+	top: 35%;
+	
+}
+
+p.card-5 {
+	position: absolute;
+    text-align: center;
+	top: 38%;
+	font-size:4.4em;
+	font-family: arial;
+	letter-spacing:0.3em;
+    width: 100%;
+}
+
+h4.card-5 {
+	position: absolute;
+    text-align:center;
+	top: 55%;
+	color:#F94546;
+	font-size: 3.3em;
+	font-style: bold;
+	font-family: arial; 
+	letter-spacing: 0.3em;
+    width: 100%;
+}
+
+.ADIDAS{
+margin-top: 2rem;
+}
+@media (max-width:800px) {
+.card .card-bg{display:none;} 
+}
+
+.card .card-bg{
+	opacity: 0.6;
+ 	background:linear-gradient(to bottom, #828282 20%, #000000 80%);
+    transition: opacity 0.5s;
+}
+
+.card .card-bg:hover{
+	opacity:0;
+}
+
+
+.bac{
+	position: fixed;
+	bottom: 0;
+	right: 15rem;
+	opacity: 0.3;
+	background: #000000;
+	border-radius:30px 30px 0 0;
+    transition: opacity 0.5s;
+}
+.bac svg{
+	color: #D1D2D3;	
+}
+.bac:hover{
+	opacity: 0.7;
+	background: #000000;
+	color: #FFFFFF;	
+}
+
+/*****************************/
+
+li a{
+	color: #777;
+	text-decoration: none;
+	font-family: Arial;
+	font-weight: bold ;
+	letter-spacing: 5px;
+    padding-bottom: 10px;
+    transition: color 0.5s;
+}
+
+li a:hover{
+	color: #1A1A1A;
+	text-decoration:none;
+	cursor: pointer;
+
+}
+
+li a.nb:after {
+	display: block;
+	position:unset;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 1px; /*задаём ширину линии*/
+	background-color: #1A1A1A; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+ li a.nb:hover:after,
+ li a.nb:focus:after {
+	width: 98%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+
+
+
