@@ -1,4 +1,7 @@
 body{font-size: 100%;}
+@media(min-width:1800px){
+ body{font-size: 160%;} 	
+}
 @media (max-width:1300px) {
   body{font-size: 80%;}  
 }
@@ -260,7 +263,7 @@ p.card-5 {
 	top: 38%;
 	font-size:4.4em;
 	font-family: arial;
-	letter-spacing:0.3em;
+	letter-spacing:0.2em;
     width: 100%;
 }
 
